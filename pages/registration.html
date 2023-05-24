@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>TTC Concarneau</title>
+
+  <meta name="description" content=""/>
+  <meta property="og:title" content=""/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="../css/index.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar">
+        <a href="../index.html" class="link">
+          <i class="fa-solid fa-house" title="homepage"></i>
+        </a>
+        <div class="dropdown">
+          <button class="dropbtn">le club</button>
+          <div class="dropdown-content">
+            <a href="../index.html#club-content" class="link">histoire</a>
+            <a href="committee.html" class="link">bureau</a>
+            <a href="event.html" class="link">événements</a>
+          </div>
+        </div>
+        <a href="training.html" class="link">entraînement</a>
+        <a href="#contactUs" class="link">contact</a>
+        <a href="https://www.facebook.com/ALConcarneauTennisdeTable/"
+           target="_blank" title="social" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="registration-container">
+      <div class="licence-info">
+        <div>
+          <h3>tarifs annuels</h3>
+        </div>
+        <div class="table">
+          <table>
+            <caption>
+              (Licence et Assurance)
+            </caption>
+            <thead>
+            <tr>
+              <th>Catégories</th>
+              <th>Adhésion</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Jeunes</td>
+              <td>90 €</td>
+            </tr>
+            <tr>
+              <td>Adultes</td>
+              <td>110 €</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td colspan="2">Réduction de 15 € à partir du 2ème membre de la famille</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="doc-container">
+        <h3>à joindre</h3>
+        <div class="doc-content">
+          <div class="docToFill">
+            <div>
+              <p>Fiche d'inscription</p>
+              <a href="../assets/pdf/fiche-inscription.pdf" target="_blank">Télécharger</a>
+            </div>
+            <div>
+              <p>Certificat médical</p>
+              <a href="../assets/pdf/certificat-medical.pdf" target="_blank">Télécharger</a>
+            </div>
+            <div>
+              <p>Auto-questionnaire de santé (Majeurs)</p>
+              <a href="../assets/pdf/qs-maj.pdf" target="_blank">Télécharger</a>
+            </div>
+            <div>
+              <p>Auto-questionnaire de santé (Mineurs)</p>
+              <a href="../assets/pdf/qs-mineurs.pdf" target="_blank">Télécharger</a>
+            </div>
+            <div>
+              <p>Droit à l'image (Majeurs)</p>
+              <a href="../assets/pdf/droitImage-majeurs.pdf" target="_blank">Télécharger</a>
+            </div>
+            <div>
+              <p>Droit à l'image (Mineurs)</p>
+              <a href="../assets/pdf/droitImage-mineurs.pdf" target="_blank">Télécharger</a>
+            </div>
+          </div>
+          <div>
+            <p>Cotisation (chèque)</p>
+            <p>Photocopie d'une pièce d'identité (recto / verso)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contactUs">
+      <div class="form-contact">
+        <h3>nous contacter</h3>
+        <form action="" method="post" class="form-section">
+          <div>
+            <label for="name">nom</label>
+            <input type="text" id="name"/>
+          </div>
+          <div>
+            <label for="email">email</label>
+            <input type="email" id="email"/>
+          </div>
+          <div class="subject">
+            <label for="message">sujet du message</label>
+            <input type="text" id="message"/>
+          </div>
+          <div class="textarea">
+            <label for="msg">message</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+        <div class="form-submit">
+          <input type="submit" value="envoyer" class="btn"/>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h4>Club labellisé FFTT</h4>
+    <p>La Fédération Française de Tennis de Table a décerné à l'association le Label Club qui
+       récompense la qualité de la vie associative, la cohésion, le lien entre les adhérents et la
+       contribution du club à la vie de la commune</p>
+  </footer>
+</body>
+</html>
