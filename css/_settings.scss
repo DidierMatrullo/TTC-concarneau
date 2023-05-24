@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-Regular.ttf);
+}
+
+$font1: cormorant, serif;
+$font2: montserrat, serif;
+$font3: raleway, sans-serif;
+
+$white1: #ffffff;
+$white2: #e3e2e2;
+$black1: #000;
+$grey1: #c0c0c0;
+$grey2: #414141;
+$grey3: #b3b2b2;
+
+@mixin title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: $font2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $black1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font1;
+  color: $black1;
+  text-align: center;
+  margin: 0 auto;
+  background: $grey1;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: $grey3;
+    width: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+}
+

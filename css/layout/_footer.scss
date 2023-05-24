@@ -1,0 +1,23 @@
+footer {
+  background: $black1;
+
+  h4 {
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  h4, p {
+    color: $white1;
+  }
+}

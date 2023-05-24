@@ -1,0 +1,107 @@
+header {
+
+  .header-title {
+    background: url(../../assets/img/picback.webp) center/cover;
+    height: 75vh;
+
+    h1, h2 {
+      @include title;
+      padding: 10px;
+      color: $white1;
+    }
+
+    h1 {
+      padding-top: 100px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $black1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    .navbar {
+      overflow: hidden;
+      background: $black1;
+      display: flex;
+      align-items: center;
+
+      .dropdown {
+        overflow: hidden;
+      }
+
+      .dropbtn {
+        text-transform: uppercase;
+        font-family: $font1;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 16px 20px;
+        background: $black1;
+        margin: 0;
+      }
+
+      .link:hover, .dropdown:hover .dropbtn {
+        background: #abbaba;
+        color: $black1;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: $black1;
+        min-width: 160px;
+        z-index: 10;
+
+        a {
+          color: $white1;
+          padding: 16px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+      .dropdown-content a:hover {
+        background: #abbaba;
+        color: $black1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      a {
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .fa-facebook {
+        font-size: 1.6rem;
+        transition: 0.5s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+
+
