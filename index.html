@@ -19,47 +19,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="./assets/styles/index.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
   <header>
     <nav>
-      <div class="left-nav">
-        <a href="#home">
+      <div class="navbar">
+        <a href="index.html" class="link">
           <i class="fa-solid fa-house" title="homepage"></i>
         </a>
         <div class="dropdown">
           <button class="dropbtn">le club</button>
           <div class="dropdown-content">
-            <a href="#">histoire</a>
-            <a href="#">bureau</a>
-            <a href="#">entraînement</a>
+            <a href="#club-content" class="link">histoire</a>
+            <a href="pages/committee.html" class="link">bureau</a>
+            <a href="pages/event.html" class="link">événements</a>
           </div>
         </div>
-        <a href="">résultats</a>
-        <a href="">inscription</a>
-        <a href="">événement</a>
-      </div>
-      <div class="right-nav">
-        <a href="">contact</a>
-        <a href="">
-          <i class="fa-brands fa-facebook" title="nous suivre"></i>
+        <a href="pages/training.html" class="link">entraînement</a>
+        <a href="pages/registration.html" class="link">inscription</a>
+        <a href="#contactUs" class="link">contact</a>
+        <a href="https://www.facebook.com/ALConcarneauTennisdeTable/"
+           target="_blank" title="social" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
     </nav>
-    <h1>amicale laïque concarneau</h1>
-    <h2>section tennis de table</h2>
+    <div class="header-title">
+      <h1>amicale laïque concarneau</h1>
+      <h2>section tennis de table</h2>
+    </div>
   </header>
 
   <main>
-    <section class="section-1">
-      <div class="s1-links">
-        <a href="assets/pages/page-d.html" class="btn">calendrier</a>
-        <a href="assets/pages/page-g.html" class="btn">résultats / équipes</a>
-        <a href="assets/pages/page-c.html" class="btn">événements</a>
+    <section class="section-container">
+      <div class="sc-links">
+        <a href="pages/calendar.html" class="btn">calendrier</a>
+        <a href="pages/results.html" class="btn">résultats / équipes</a>
+        <a href="pages/sponsors.html" class="btn">nos partenaires</a>
       </div>
     </section>
-    <section class="club-container" id="history">
+    <section class="club-container" id="club-content">
       <h3>le club</h3>
       <div class="club-content">
         <div class="left-part">
@@ -90,25 +90,18 @@
           </p>
         </div>
       </div>
-      <div class="club-data">
-        <h3>structure</h3>
-        <div class="data">
-          <p>Adhérents: 80</p>
-          <p>Infrastructure: 12 tables</p>
-          <p>Créneaux horaires: 16 heures d'entraînement libre et dirigé</p>
-          <p>Championnat: 8 équipes Séniors et 2 équipes Jeunes</p>
-          <p>Loisirs: 1 section et des rencontres amicales organisées</p>
-        </div>
+      <div class="club-book">
+        <h4>merci</h4>
+        <p>A tous les bénévoles, nos partenaires, la presse, la ville de Concarneau et les institutions qui
+           permettent l'existence et le développement du Tennis club de Concarneau.</p>
+        <span>Retrouvez toutes les informations dans le <a
+            href="./assets/pdf/Livret-Club-2022-2023.pdf" target="_blank">Livret Club 2023</a></span>
       </div>
     </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-content" id="contactUs">
-      <h3>nous contacter</h3>
-      <form action="" method="post">
-        <div class="form-section">
+    <section class="contact" id="contactUs">
+      <div class="form-contact">
+        <h3>nous contacter</h3>
+        <form action="" method="post" class="form-section">
           <div>
             <label for="name">nom</label>
             <input type="text" id="name"/>
@@ -125,12 +118,19 @@
             <label for="msg">message</label>
             <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
           </div>
+        </form>
+        <div class="form-submit">
+          <input type="submit" value="envoyer" class="btn"/>
         </div>
-      </form>
-      <div class="form-submit">
-        <input type="submit" value="envoyer" class="btn"/>
       </div>
-    </div>
+    </section>
+  </main>
+
+  <footer>
+    <h4>Club labellisé FFTT</h4>
+    <p>La Fédération Française de Tennis de Table a décerné à l'association le Label Club qui
+       récompense la qualité de la vie associative, la cohésion, le lien entre les adhérents et la
+       contribution du club à la vie de la commune</p>
   </footer>
 </body>
 </html>
