@@ -1,7 +1,7 @@
 main {
   margin: 40px auto;
-  width: 85%;
   overflow: hidden;
+  width: 90%;
 
   .section-container {
     margin: 60px auto;
@@ -14,7 +14,7 @@ main {
       a {
         text-transform: uppercase;
         padding: 10px 30px;
-        border: 1px solid $black1;
+        border: 1px solid $white2;
         background: lightslategrey;
         color: $white1;
         font-family: "JetBrains Mono", sans-serif;
@@ -39,7 +39,7 @@ main {
       .right-part {
         h4 {
           text-transform: uppercase;
-          padding: 10px;
+          padding: 20px 0;
           letter-spacing: 1px;
           font-weight: 500;
         }
@@ -53,10 +53,10 @@ main {
     }
 
     .club-book {
-      background: lightslategray;
+      background: rgba(119, 136, 153, 0.35);
       padding: 20px 0;
       margin: 0 auto;
-      color: $white1;
+      color: $black1;
 
 
       h4 {
@@ -82,7 +82,7 @@ main {
         a {
           border: 1px solid white;
           padding: 7px;
-          background: lightslategray;
+          background: rgb(119, 136, 153);
           color: $white1;
 
           &:hover {
@@ -155,6 +155,7 @@ main {
         cursor: pointer;
         font-family: $font1;
         font-size: 0.8rem;
+        color: $black1;
 
         &:hover {
           background: #abbaba;

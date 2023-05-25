@@ -1,34 +1,38 @@
 header {
+  position: relative;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
 
   .header-title {
-    background: url(../../assets/img/picback.webp) center/cover;
-    height: 75vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 
     h1, h2 {
       @include title;
       padding: 10px;
       color: $white1;
     }
-
-    h1 {
-      padding-top: 100px;
-    }
   }
 
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $black1;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
 
     .navbar {
-      overflow: hidden;
       background: $black1;
+      overflow: hidden;
       display: flex;
+      justify-content: space-around;
       align-items: center;
 
       .dropdown {
