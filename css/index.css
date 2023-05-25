@@ -61,8 +61,6 @@ header .header-title {
     color: #ffffff; }
   header .header-title h1 {
     padding-top: 100px; }
-  header .header-title img {
-    width: 100%; }
 header nav {
   display: flex;
   justify-content: space-between;
