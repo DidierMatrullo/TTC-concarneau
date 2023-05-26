@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="fr">
+
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,15 +13,12 @@
   <meta property="og:url" content=""/>
   <meta property="og:image" content=""/>
 
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/main.css"/>
 </head>
+
 <body>
   <header>
     <nav>
@@ -29,18 +27,18 @@
           <i class="fa-solid fa-house" title="homepage"></i>
         </a>
         <div class="dropdown">
-          <button class="dropbtn">le club</button>
+          <button class="dropbtn">club<i class="fa-solid fa-angle-down"></i></button>
           <div class="dropdown-content">
             <a href="#club-content" class="link">histoire</a>
-            <a href="pages/committee.html" class="link">bureau</a>
-            <a href="pages/event.html" class="link">événements</a>
+            <a href="pages/committee.html" class="link">organigramme</a>
+            <a href="pages/training.html" class="link">entraînement</a>
+
+            <a href="pages/sponsors.html" class="btn">partenaires</a>
           </div>
         </div>
-        <a href="pages/training.html" class="link">entraînement</a>
         <a href="pages/registration.html" class="link">inscription</a>
         <a href="#contactUs" class="link">contact</a>
-        <a href="https://www.facebook.com/ALConcarneauTennisdeTable/"
-           target="_blank" title="social" rel="noopener">
+        <a href="https://www.facebook.com/ALConcarneauTennisdeTable/" target="_blank" title="social" rel="noopener">
           <i class="fa-brands fa-facebook"></i>
         </a>
       </div>
@@ -56,8 +54,8 @@
     <section class="section-container">
       <div class="sc-links">
         <a href="pages/calendar.html" class="btn">calendrier</a>
-        <a href="pages/results.html" class="btn">résultats / équipes</a>
-        <a href="pages/sponsors.html" class="btn">nos partenaires</a>
+        <a href="https://monclub.fftt.com/contests/team/consult" class="btn">résultats / équipes</a>
+        <a href="pages/event.html" class="link">événements</a>
       </div>
     </section>
     <section class="club-container" id="club-content">
@@ -91,12 +89,14 @@
           </p>
         </div>
       </div>
+    </section>
+    <section class="greetings">
       <div class="club-book">
         <h4>merci</h4>
         <p>A tous les bénévoles, nos partenaires, la presse, la ville de Concarneau et les institutions qui
-           permettent l'existence et le développement du Tennis club de Concarneau.</p>
-        <span>Retrouvez toutes les informations dans le <a
-            href="./assets/pdf/Livret-Club-2022-2023.pdf" target="_blank">Livret Club 2023</a></span>
+           permettent l'existence et le développement du Tennis club de Concarneau. <br>Retrouvez toutes les
+           informations dans le <a href="./assets/pdf/Livret-Club-2022-2023.pdf" target="_blank">Livret Club 2023</a>
+        </p>
       </div>
     </section>
     <section class="contact" id="contactUs">
@@ -134,4 +134,5 @@
        contribution du club à la vie de la commune</p>
   </footer>
 </body>
+
 </html>
