@@ -1,0 +1,38 @@
+footer {
+  width: 90%;
+  margin: 0 auto;
+
+  h3 {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 1.2rem;
+
+      &:before,
+      &:after {
+        width: 25%;
+      }
+
+      p {
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 10px 0;
+        margin: 0;
+      }
+    }
+  }
+}

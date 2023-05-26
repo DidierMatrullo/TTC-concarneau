@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/CormorantGaramond-Regular.ttf); }
+@font-face {
+  font-family: "montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf); }
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-Regular.ttf); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: cormorant, serif;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  background: #c0c0c0; }
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500; }
+  h3:before, h3:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #b3b2b2;
+    width: 37%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0; }
+  h3:before {
+    left: 0; }
+  h3:after {
+    right: 0; }
+
+header {
+  position: relative;
+  margin: 0 auto; }
+  header img {
+    width: 100%; }
+  header .header-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); }
+    header .header-title h1, header .header-title h2 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: montserrat, serif;
+      padding: 10px 0;
+      color: #ffffff; }
+    @media screen and (max-width: 600px) {
+      header .header-title {
+        top: 30%; }
+        header .header-title h1, header .header-title h2 {
+          font-size: 1rem;
+          padding: 7px 0; } }
+  header nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; }
+    header nav .navbar {
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 1rem; }
+      @media screen and (max-width: 600px) {
+        header nav .navbar {
+          font-size: 0.7rem; } }
+      header nav .navbar .dropdown {
+        overflow: hidden; }
+      header nav .navbar .dropbtn {
+        text-transform: uppercase;
+        font-family: cormorant, serif; }
+        header nav .navbar .dropbtn i {
+          padding-left: 5px; }
+          @media screen and (max-width: 600px) {
+            header nav .navbar .dropbtn i {
+              display: none; } }
+      header nav .navbar .dropdown .dropbtn {
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 16px 20px;
+        background: #000;
+        margin: 0; }
+        @media screen and (max-width: 600px) {
+          header nav .navbar .dropdown .dropbtn {
+            font-size: 0.7rem;
+            padding: 8px 10px; } }
+      header nav .navbar .link:hover, header nav .navbar .dropdown:hover .dropbtn {
+        background: #abbaba;
+        color: #000; }
+      header nav .navbar .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #000;
+        min-width: 160px;
+        z-index: 10; }
+        header nav .navbar .dropdown-content a {
+          color: #ffffff;
+          padding: 8px 8px;
+          text-decoration: none;
+          display: block;
+          text-align: left; }
+      header nav .navbar .dropdown-content a:hover {
+        background: #abbaba;
+        color: #000; }
+      header nav .navbar .dropdown:hover .dropdown-content {
+        display: block; }
+      header nav .navbar a {
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        text-transform: uppercase; }
+      header nav .navbar .fa-facebook {
+        font-size: 1.6rem;
+        transition: 0.5s ease; }
+        header nav .navbar .fa-facebook:hover {
+          transform: scale(1.2); }
+        @media screen and (max-width: 600px) {
+          header nav .navbar .fa-facebook {
+            font-size: 1rem; } }
+
+main {
+  margin: 40px auto;
+  overflow: hidden;
+  width: 90%;
+  /**************** committee ******************/
+  /**************** training ****************/
+  /************** Planning ****************/
+  /************* Registration *************/ }
+  @media screen and (max-width: 600px) {
+    main h3 {
+      font-size: 1.2rem; }
+      main h3:before, main h3:after {
+        width: 25%; } }
+  main .section-container {
+    margin: 60px auto; }
+    main .section-container .sc-links {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      @media screen and (max-width: 600px) {
+        main .section-container .sc-links {
+          font-size: 0.7rem; } }
+      main .section-container .sc-links a {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: montserrat, serif;
+        padding: 10px 30px;
+        border: 1px solid #e3e2e2;
+        background: lightslategrey;
+        color: #ffffff; }
+        main .section-container .sc-links a:hover {
+          background: #abbaba;
+          color: #000; }
+        @media screen and (max-width: 600px) {
+          main .section-container .sc-links a {
+            padding: 5px 15px; } }
+    @media screen and (max-width: 600px) {
+      main .section-container {
+        margin: 15px auto; } }
+  main .club-container {
+    margin: 50px auto; }
+    main .club-container .club-content {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: 40px auto; }
+      @media screen and (max-width: 600px) {
+        main .club-container .club-content {
+          display: block;
+          margin: 20px auto; } }
+      main .club-container .club-content .left-part h4,
+      main .club-container .club-content .right-part h4 {
+        text-transform: uppercase;
+        padding: 20px 0;
+        letter-spacing: 1px;
+        font-weight: 500; }
+      main .club-container .club-content .left-part p,
+      main .club-container .club-content .right-part p {
+        text-align: justify;
+        padding: 0 10px;
+        font-size: 1.2rem; }
+      @media screen and (max-width: 600px) {
+        main .club-container .club-content .left-part h4,
+        main .club-container .club-content .right-part h4 {
+          font-size: 1rem; }
+        main .club-container .club-content .left-part p,
+        main .club-container .club-content .right-part p {
+          font-size: 0.7rem; } }
+  main .greetings .club-book {
+    background: rgba(119, 136, 153, 0.35);
+    padding: 20px 0;
+    margin: 0;
+    color: #000; }
+    main .greetings .club-book h4 {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      letter-spacing: 1px; }
+    main .greetings .club-book p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      width: 70%;
+      text-align: left;
+      margin: 0 auto;
+      padding: 20px; }
+    main .greetings .club-book a {
+      padding: 7px;
+      color: #ffffff;
+      line-height: 25px; }
+      main .greetings .club-book a:hover {
+        text-decoration: underline;
+        color: #000; }
+    @media screen and (max-width: 600px) {
+      main .greetings .club-book h4 {
+        font-size: 1rem; }
+      main .greetings .club-book p {
+        font-size: 0.7rem;
+        width: 100%; } }
+  main .contact {
+    margin: 50px 0; }
+    main .contact .form-section {
+      width: 85%;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 80px 80px 200px;
+      grid-template-areas: "i1 i2" "i3 i3" "textarea textarea";
+      gap: 10px;
+      max-width: 600px; }
+      main .contact .form-section .subject {
+        grid-area: i3; }
+      main .contact .form-section .textarea {
+        grid-area: textarea; }
+      main .contact .form-section label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem; }
+      main .contact .form-section input[type="text"],
+      main .contact .form-section input[type="email"],
+      main .contact .form-section textarea {
+        width: 100%;
+        border: 1px solid #e3e2e2;
+        background: none;
+        border-radius: 5px;
+        margin: 10px 0 20px;
+        padding: 10px;
+        outline: none; }
+        main .contact .form-section input[type="text"]:focus,
+        main .contact .form-section input[type="email"]:focus,
+        main .contact .form-section textarea:focus {
+          border: 1px solid blueviolet; }
+      main .contact .form-section textarea {
+        height: 180px;
+        resize: none; }
+    main .contact .form-submit .btn {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: none;
+      padding: 10px 40px;
+      border: 1px solid #e3e2e2;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: cormorant, serif;
+      font-size: 0.8rem;
+      color: #000; }
+      main .contact .form-submit .btn:hover {
+        background: #abbaba; }
+  main .board-members {
+    margin: 70px auto; }
+    main .board-members .members-table table {
+      border-collapse: collapse;
+      margin: 20px auto; }
+      main .board-members .members-table table td {
+        border: 1px solid #e3e2e2;
+        font-size: 1.2rem;
+        padding: 7px 15px;
+        text-align: left; }
+  main .training-container .training-category {
+    padding-top: 60px; }
+    main .training-container .training-category .training-days .youth-section table,
+    main .training-container .training-category .training-days .senior-section table {
+      border-collapse: collapse;
+      margin: 40px auto; }
+      main .training-container .training-category .training-days .youth-section table caption,
+      main .training-container .training-category .training-days .senior-section table caption {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: 700; }
+      main .training-container .training-category .training-days .youth-section table tr,
+      main .training-container .training-category .training-days .senior-section table tr {
+        border-bottom: 1px solid #b3b2b2;
+        text-align: left; }
+      main .training-container .training-category .training-days .youth-section table td,
+      main .training-container .training-category .training-days .senior-section table td {
+        padding: 7px 10px;
+        font-size: 1.2rem; }
+      main .training-container .training-category .training-days .youth-section table .day,
+      main .training-container .training-category .training-days .senior-section table .day {
+        border-right: 1px solid #b3b2b2; }
+  main .calendar-container .calendar-content {
+    margin: 50px auto; }
+    main .calendar-container .calendar-content p {
+      padding: 10px 0;
+      font-family: "Roboto Light", sans-serif;
+      font-weight: 200; }
+    main .calendar-container .calendar-content .board-category {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: 30px auto;
+      width: 70%; }
+      main .calendar-container .calendar-content .board-category p {
+        text-align: left; }
+      main .calendar-container .calendar-content .board-category iframe {
+        width: 300px;
+        height: 400px; }
+  main .registration-container {
+    margin: 60px auto; }
+    main .registration-container .licence-info table {
+      margin: 30px auto;
+      border-collapse: collapse; }
+      main .registration-container .licence-info table caption {
+        font-size: 1.2rem; }
+      main .registration-container .licence-info table th,
+      main .registration-container .licence-info table td {
+        border: 1px solid #b3b2b2;
+        padding: 7px 12px;
+        font-size: 1.2rem; }
+  main .doc-content {
+    width: 60%;
+    margin: 30px auto; }
+    main .doc-content p {
+      padding: 7px;
+      text-align: left;
+      font-size: 1.2rem; }
+    main .doc-content .docToFill div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 0; }
+    main .doc-content .docToFill a {
+      border: 1px solid #e3e2e2;
+      padding: 7px 12px;
+      text-transform: uppercase;
+      font-size: 0.8rem; }
+      main .doc-content .docToFill a:hover {
+        background: #abbaba;
+        color: #ffffff; }
+  main .sponsor-container {
+    margin: 70px auto; }
+    main .sponsor-container img {
+      width: 180px;
+      height: 100px;
+      padding: 10px; }
+    main .sponsor-container p {
+      font-size: 1.2rem;
+      text-align: left; }
+    main .sponsor-container .partners {
+      margin: 30px auto; }
+      main .sponsor-container .partners div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center; }
+    main .sponsor-container .media,
+    main .sponsor-container .establishment,
+    main .sponsor-container .securalism {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 30px auto; }
+
+footer {
+  width: 90%;
+  margin: 0 auto; }
+  footer h3 {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    letter-spacing: 1px; }
+  footer p {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px; }
+  @media screen and (max-width: 600px) {
+    footer h3 {
+      font-size: 1.2rem; }
+      footer h3:before, footer h3:after {
+        width: 25%; }
+      footer h3 p {
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 10px 0;
+        margin: 0; } }
+
+/*# sourceMappingURL=main.css.map */
