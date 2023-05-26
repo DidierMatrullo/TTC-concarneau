@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -12,147 +13,126 @@
   <meta property="og:url" content=""/>
   <meta property="og:image" content=""/>
 
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="../css/index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="../css/main.css"/>
 </head>
 
 <body>
-  <main id="main">
-    <div class="partners" id="partners">
-      <div>
+  <header>
+    <nav>
+      <div class="navbar">
+        <a href="../index.html" class="link">
+          <i class="fa-solid fa-house" title="homepage"></i>
+        </a>
+        <div class="dropdown">
+          <button class="dropbtn">club <i class="fa-solid fa-angle-down"></i></button>
+          <div class="dropdown-content">
+            <a href="../index.html#club-content" class="link">histoire</a>
+            <a href="committee.html" class="link">organigramme</a>
+            <a href="training.html" class="link">entraînement</a>
+
+            <a href="sponsors.html" class="btn">partenaires</a>
+          </div>
+        </div>
+        <a href="registration.html" class="link">inscription</a>
+        <a href="../index.html#contactUs" class="link">contact</a>
+        <a href="https://www.facebook.com/ALConcarneauTennisdeTable/" target="_blank" title="social" rel="noopener">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="sponsor-container" id="sponsors">
+      <div class="partners-content">
         <h3>entreprises</h3>
-        <div class="private-sponsors">
-          <a
-              href="https://www.barillec-marine.com/"
-              target="_blank"
-              title="barillec"
-              rel="noopener"
-          >
-            <img src="../assets/img/barillec.webp" alt="logo barillec"/>
-          </a>
-          <a
-              href="https://www.cavedumoros.com/"
-              target="_blank"
-              title="cave du moros"
-              rel="noopener"
-          >
-            <img src="../assets/img/cave.webp" alt="logo cave du moros"/>
-          </a>
-          <a
-              href="https://www.decathlon.fr/"
-              target="_blank"
-              title="decathlon"
-              rel="noopener"
-          >
-            <img src="../assets/img/decathlon.webp" alt="logo decathlon"/>
-          </a>
-          <a
-              href="https://www.intermarche.com/"
-              target="_blank"
-              title="intermarché"
-              rel="noopener"
-          >
-            <img src="../assets/img/logo_ITM.webp" alt="logo intermaché"/>
-          </a>
-          <a
-              href="https://www.credit-agricole.fr/ca-finistere/"
-              target="_blank"
-              title="credit agricole"
-              rel="noopener"
-          >
-            <img src="../assets/img/CA_Logo_seul-1.svg" alt="logo credit agricole"/>
-          </a>
+        <div class="partners">
+          <div>
+            <a href="https://www.barillec-marine.com/" target="_blank" title="barillec" rel="noopener">
+              <img src="../assets/img/barillec.webp" alt="logo barillec"/>
+            </a>
+            <p>Barillec Marine - Concarneau</p>
+
+          </div>
+          <div>
+            <a href="https://www.cavedumoros.com/" target="_blank" title="cave du moros" rel="noopener">
+              <img src="../assets/img/cave.webp" alt="logo cave du moros"/>
+            </a>
+            <p>Cave du Moros - Concarneau</p>
+
+          </div>
+          <div>
+            <a href="https://www.decathlon.fr/" target="_blank" title="decathlon" rel="noopener">
+              <img src="../assets/img/decathlon.webp" alt="logo decathlon"/>
+            </a>
+            <p>Decathlon - Concarneau</p>
+          </div>
+          <div>
+            <a href="https://www.intermarche.com/" target="_blank" title="intermarché" rel="noopener">
+              <img src="../assets/img/logo_ITM.webp" alt="logo intermaché"/>
+            </a>
+            <p>Intermarché - Concarneau</p>
+          </div>
+          <div>
+            <a href="https://www.credit-agricole.fr/ca-finistere/" target="_blank" title="credit agricole"
+               rel="noopener">
+              <img src="../assets/img/CA_Logo_seul-1.svg" alt="logo credit agricole"/>
+            </a>
+            <p>Crédit Agricole - Concarneau</p>
+          </div>
         </div>
       </div>
-      <div>
+      <div class="media-content">
         <h3>médias</h3>
         <div class="media">
-          <a
-              href="https://www.ouest-france.fr/"
-              target="_blank"
-              title="journal ouest-france"
-              rel="noopener"
-          >
+          <a href="https://www.ouest-france.fr/" target="_blank" title="journal ouest-france" rel="noopener">
             <img src="../assets/img/ouestfrance.webp" alt="logo ouest france"/>
           </a>
-          <a
-              href="https://www.letelegramme.fr/"
-              target="_blank"
-              title="journal telegramme"
-              rel="noopener"
-          >
+          <a href="https://www.letelegramme.fr/" target="_blank" title="journal telegramme" rel="noopener">
             <img src="../assets/img/telegramme.webp" alt="logo telegramme"/>
           </a>
         </div>
       </div>
-      <div>
+      <div class="establishment-content">
         <h3>institutions</h3>
-        <div class="establishment-link">
-          <a
-              href="http://www.finistereping.fr/"
-              target="_blank"
-              title="comité finistère tennis de table"
-              rel="noopener"
-          >
-            <img
-                src="../assets/img/ttfinistere.webp"
-                alt="logo comité du finistère"
-            />
+        <div class="establishment">
+          <a href="http://www.finistereping.fr/" target="_blank" title="comité finistère tennis de table"
+             rel="noopener">
+            <img src="../assets/img/ttfinistere.webp" alt="logo comité du finistère"/>
           </a>
-          <a
-              href="https://lbretagnett.com/"
-              target="_blank"
-              title="ligue de bretagne tennis de table"
-              rel="noopener"
-          >
+          <a href="https://lbretagnett.com/" target="_blank" title="ligue de bretagne tennis de table" rel="noopener">
             <img src="../assets/img/ttbretagne.webp" alt="logo ligue de bretagne"/>
           </a>
-          <a
-              href="https://www.fftt.com/site/"
-              target="_blank"
-              title="fédération française tennis de table"
-              rel="noopener"
-          >
+          <a href="https://www.fftt.com/site/" target="_blank" title="fédération française tennis de table"
+             rel="noopener">
             <img src="../assets/img/fftt.webp" alt="logo ff tennis de table"/>
           </a>
-          <a
-              href="https://www.concarneau.fr/ville/"
-              target="_blank"
-              title="ville de concarneau"
-              rel="noopener"
-          >
+          <a href="https://www.concarneau.fr/ville/" target="_blank" title="ville de concarneau" rel="noopener">
             <img src="../assets/img/concarneau.webp" alt="logo ff tennis de table"/>
           </a>
         </div>
       </div>
-      <div>
+      <div class="securalism-content">
         <h3>Laicité</h3>
-        <div class="securalism-link">
-          <a
-              href="https://www.laicite-aujourdhui.fr/"
-              target="_blank"
-              title="laîcité aujourd'hui"
-              rel="noopener"
-          >
+        <div class="securalism">
+          <a href="https://www.laicite-aujourdhui.fr/" target="_blank" title="laîcité aujourd'hui" rel="noopener">
             <img src="../assets/img/alc.webp" alt="logo amicale laïque"/>
           </a>
-          <a
-              href="https://www.laicite-aujourdhui.fr/"
-              target="_blank"
-              title="laîcité aujourd'hui"
-              rel="noopener"
-          >
+          <a href="https://www.laicite-aujourdhui.fr/" target="_blank" title="laîcité aujourd'hui" rel="noopener">
             <img src="../assets/img/laicite.webp" alt="logo laicité aujourd'hui"/>
           </a>
         </div>
       </div>
     </div>
   </main>
+  <footer>
+    <h3>Club labellisé FFTT</h3>
+    <p>La Fédération Française de Tennis de Table a décerné à l'association le Label Club qui
+       récompense la qualité de la vie associative, la cohésion, le lien entre les adhérents et la
+       contribution du club à la vie de la commune</p>
+  </footer>
 </body>
+
 </html>
