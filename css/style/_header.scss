@@ -15,17 +15,35 @@ header {
     left: 50%;
     transform: translateX(-50%);
 
-    h1, h2 {
+    h1,
+    h2 {
       @include title;
       padding: 10px 0;
       color: $white1;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
       top: 30%;
-      h1, h2 {
+
+      h1,
+      h2 {
         font-size: 1rem;
         padding: 7px 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      top: 33%;
+      width: 90%;
+
+      h1,
+        {
+        font-size: 0.8rem;
+        padding: 7px 0;
+      }
+
+      h2 {
+        font-size: 0.8rem;
       }
     }
   }
@@ -80,7 +98,8 @@ header {
         }
       }
 
-      .link:hover, .dropdown:hover .dropbtn {
+      .link:hover,
+      .dropdown:hover .dropbtn {
         background: #abbaba;
         color: $black1;
       }
@@ -132,6 +151,3 @@ header {
     }
   }
 }
-
-
-

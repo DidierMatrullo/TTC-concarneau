@@ -3,9 +3,31 @@ main {
   overflow: hidden;
   width: 90%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 920px) {
     h3 {
       font-size: 1.2rem;
+
+      &:before,
+      &:after {
+        width: 33%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.2rem;
+
+      &:before,
+      &:after {
+        width: 30%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 1rem;
 
       &:before,
       &:after {
@@ -18,14 +40,14 @@ main {
   .section-container {
     margin: 60px auto;
 
+    @media screen and (max-width:600px) {
+      margin: 0px auto;
+    }
+
     .sc-links {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-
-      @media screen and (max-width: 600px) {
-        font-size: 0.7rem;
-      }
 
       a {
         @include title;
@@ -33,30 +55,56 @@ main {
         border: 1px solid $white2;
         background: lightslategrey;
         color: $white1;
+        max-width: 300px;
 
         &:hover {
           background: #abbaba;
           color: $black1;
         }
 
-        @media screen and (max-width: 600px) {
-          padding: 5px 15px;
+      }
+
+      @media screen and (max-width: 768px) {
+
+        a {
+          padding: 5px 10px;
+          font-size: 0.8rem;
+          margin: 5px auto;
+          width: 200px;
         }
       }
-    }
 
-    @media screen and (max-width: 600px) {
-      margin: 15px auto;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        a {
+          padding: 5px 10px;
+          font-size: 0.8rem;
+          margin: 5px auto;
+          width: 200px;
+        }
+      }
     }
   }
 
   .club-container {
     margin: 50px auto;
 
+    @media screen and (max-width:600px) {
+      margin: 20px auto;
+
+
+    }
+
     .club-content {
       display: grid;
       grid-template-columns: 50% 50%;
       margin: 40px auto;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        margin: 20px auto;
+      }
 
       @media screen and (max-width: 600px) {
         display: block;
@@ -78,10 +126,21 @@ main {
           font-size: 1.2rem;
         }
 
+        @media screen and (max-width: 768px) {
+          h4 {
+            font-size: 1rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+
         @media screen and (max-width: 600px) {
           h4 {
             font-size: 1rem;
           }
+
           p {
             font-size: 0.7rem;
           }
@@ -123,13 +182,30 @@ main {
         }
       }
 
+      @media screen and (max-width: 768px) {
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          width: 100%;
+        }
+      }
+
       @media screen and (max-width: 600px) {
         h4 {
           font-size: 1rem;
         }
+
         p {
-          font-size: 0.7rem;
+          font-size: 0.8rem;
           width: 100%;
+        }
+
+        a {
+          font-size: 0.8rem;
+          padding: 3px;
         }
       }
     }
@@ -138,6 +214,9 @@ main {
   .contact {
     margin: 50px 0;
 
+    @media screen and (max-width:600px) {
+      margin: 20px auto;
+    }
 
     .form-section {
       width: 85%;
@@ -148,6 +227,10 @@ main {
       grid-template-areas: "i1 i2""i3 i3""textarea textarea";
       gap: 10px;
       max-width: 600px;
+
+      @media screen and (max-width:600px) {
+        display: block;
+      }
 
       .subject {
         grid-area: i3;
@@ -210,6 +293,10 @@ main {
   .board-members {
     margin: 70px auto;
 
+    @media screen and (max-width:600px) {
+      margin: 40px auto;
+    }
+
     .members-table {
       table {
         border-collapse: collapse;
@@ -221,6 +308,15 @@ main {
           font-size: 1.2rem;
           padding: 7px 15px;
           text-align: left;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        table {
+          td {
+            font-size: 0.8rem;
+            padding: 5px 8px;
+          }
         }
       }
     }
@@ -259,6 +355,32 @@ main {
 
             .day {
               border-right: 1px solid $grey3;
+            }
+          }
+
+          @media screen and (max-width:768px) {
+
+            table {
+
+              caption,
+              td {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          @media screen and (max-width:600px) {
+
+            table,
+            td {
+              caption {
+                font-size: 0.8rem;
+              }
+
+              td {
+                padding: 4px 5px;
+              }
+
             }
           }
         }
@@ -317,6 +439,17 @@ main {
           font-size: 1.2rem;
         }
       }
+
+      @media screen and (max-width:768px) {
+        table {
+
+          caption,
+          td,
+          th {
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 
@@ -351,39 +484,90 @@ main {
         }
       }
     }
+
+    @media screen and (max-width:768px) {
+      width: 80%;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+      width: 100%;
+
+      p {
+        font-size: 0.7rem;
+      }
+
+      .docToFill {
+        a {
+          font-size: 0.7rem;
+          padding: 4px 8px;
+        }
+      }
+    }
+  }
+}
+
+.sponsor-container {
+  margin: 70px auto;
+
+  img {
+    width: 180px;
+    height: 100px;
+    padding: 10px;
   }
 
-  .sponsor-container {
-    margin: 70px auto;
+  p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
 
+  .partners {
+    margin: 30px auto;
+
+    div {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: center;
+    }
+  }
+
+  .media,
+  .establishment,
+  .securalism {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  @media screen and (max-width:768px) {
     img {
-      width: 180px;
-      height: 100px;
-      padding: 10px;
+      width: 140px;
+      height: 80px;
     }
 
     p {
-      font-size: 1.2rem;
-      text-align: left;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    img {
+      width: 120px;
+      height: 60px;
     }
 
-    .partners {
-      margin: 30px auto;
-
-      div {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-      }
+    p {
+      font-size: 0.8rem;
     }
 
     .media,
     .establishment,
     .securalism {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 30px auto;
+      display: block;
     }
   }
 }
