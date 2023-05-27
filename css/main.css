@@ -211,6 +211,7 @@ main {
   /**************** training ****************/
   /************** Planning ****************/
   /************* Registration *************/
+  /**************** Event ***************/
 }
 @media screen and (max-width: 920px) {
   main h3 {
@@ -544,16 +545,35 @@ main .calendar-container .calendar-content p {
 }
 main .calendar-container .calendar-content .board-category {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 70%;
   margin: 30px auto;
-  width: 70%;
+  width: 80%;
 }
 main .calendar-container .calendar-content .board-category p {
   text-align: left;
 }
-main .calendar-container .calendar-content .board-category iframe {
-  width: 300px;
-  height: 400px;
+@media screen and (max-width: 768px) {
+  main .calendar-container .calendar-content .board-category p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .calendar-container .calendar-content .board-category {
+    display: block;
+  }
+  main .calendar-container .calendar-content .board-category div {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  main .calendar-container .calendar-content .board-category p {
+    font-size: 0.8rem;
+    padding: 5 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .calendar-container .calendar-content .calendar-title p {
+    font-size: 1rem;
+  }
 }
 main .registration-container {
   margin: 60px auto;
@@ -621,6 +641,38 @@ main .doc-content .docToFill a:hover {
   main .doc-content .docToFill a {
     font-size: 0.7rem;
     padding: 4px 8px;
+  }
+}
+main .event-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 60px auto;
+}
+main .event-container img {
+  width: 100%;
+}
+main .event-container .event h5 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: montserrat, serif;
+  padding: 5px;
+}
+main .event-container .event h6 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+main .event-container .event p {
+  text-align: justify;
+  padding-left: 15px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  main .event-container {
+    display: block;
+  }
+  main .event-container p {
+    text-align: left;
   }
 }
 

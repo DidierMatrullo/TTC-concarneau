@@ -402,17 +402,46 @@ main {
 
       .board-category {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 70%;
         margin: 30px auto;
-        width: 70%;
+        width: 80%;
 
         p {
           text-align: left;
         }
+      }
 
-        iframe {
-          width: 300px;
-          height: 400px;
+      @media screen and (max-width: 768px) {
+
+        .board-category {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .board-category {
+          display: block;
+
+          div {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+          }
+
+          p {
+            font-size: 0.8rem;
+            padding: 5 10px;
+
+          }
+        }
+      }
+
+      @media screen and (max-width:768px) {
+        .calendar-title {
+          p {
+            font-size: 1rem;
+          }
         }
       }
     }
@@ -505,6 +534,44 @@ main {
           font-size: 0.7rem;
           padding: 4px 8px;
         }
+      }
+    }
+  }
+
+  /**************** Event ***************/
+  .event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: 60px auto;
+
+    img {
+      width: 100%;
+    }
+
+    .event {
+      h5 {
+        @include title;
+        padding: 5px;
+      }
+
+      h6 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        padding: 10px;
+      }
+
+      p {
+        text-align: justify;
+        padding-left: 15px;
+        font-size: 1rem;
+      }
+    }
+
+    @media screen and (max-width:600px) {
+      display: block;
+
+      p {
+        text-align: left;
       }
     }
   }
