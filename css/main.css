@@ -209,7 +209,6 @@ main {
   width: 90%;
   /**************** committee ******************/
   /**************** training ****************/
-  /************** Planning ****************/
   /************* Registration *************/
   /**************** Event ***************/
 }
@@ -247,14 +246,14 @@ main .section-container {
 }
 main .section-container .sc-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 main .section-container .sc-links a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: montserrat, serif;
-  padding: 10px 30px;
+  padding: 10px;
   border: 1px solid #e3e2e2;
   background: lightslategrey;
   color: #ffffff;
@@ -266,9 +265,9 @@ main .section-container .sc-links a:hover {
 }
 @media screen and (max-width: 768px) {
   main .section-container .sc-links a {
-    padding: 5px 10px;
+    padding: 5px;
     font-size: 0.8rem;
-    margin: 5px auto;
+    margin: 5px;
     width: 200px;
   }
 }
@@ -278,7 +277,6 @@ main .section-container .sc-links a:hover {
   }
   main .section-container .sc-links a {
     padding: 5px 10px;
-    font-size: 0.8rem;
     margin: 5px auto;
     width: 200px;
   }
@@ -295,6 +293,12 @@ main .club-container .club-content {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 40px auto;
+}
+@media screen and (max-width: 900px) {
+  main .club-container .club-content {
+    display: block;
+    margin: 20px auto;
+  }
 }
 @media screen and (max-width: 768px) {
   main .club-container .club-content {
@@ -368,6 +372,15 @@ main .greetings .club-book a {
 main .greetings .club-book a:hover {
   text-decoration: underline;
   color: #000;
+}
+@media screen and (max-width: 900px) {
+  main .greetings .club-book h4 {
+    font-size: 1rem;
+  }
+  main .greetings .club-book p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   main .greetings .club-book h4 {
@@ -533,46 +546,6 @@ main .training-container .training-category .training-days .senior-section table
   main .training-container .training-category .training-days .senior-section table td,
   main .training-container .training-category .training-days .senior-section td td {
     padding: 4px 5px;
-  }
-}
-main .calendar-container .calendar-content {
-  margin: 50px auto;
-}
-main .calendar-container .calendar-content p {
-  padding: 10px 0;
-  font-family: "Roboto Light", sans-serif;
-  font-weight: 200;
-}
-main .calendar-container .calendar-content .board-category {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 30px auto;
-  width: 80%;
-}
-main .calendar-container .calendar-content .board-category p {
-  text-align: left;
-}
-@media screen and (max-width: 768px) {
-  main .calendar-container .calendar-content .board-category p {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  main .calendar-container .calendar-content .board-category {
-    display: block;
-  }
-  main .calendar-container .calendar-content .board-category div {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-  }
-  main .calendar-container .calendar-content .board-category p {
-    font-size: 0.8rem;
-    padding: 5 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  main .calendar-container .calendar-content .calendar-title p {
-    font-size: 1rem;
   }
 }
 main .registration-container {

@@ -46,12 +46,12 @@ main {
 
     .sc-links {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
 
       a {
         @include title;
-        padding: 10px 30px;
+        padding: 10px;
         border: 1px solid $white2;
         background: lightslategrey;
         color: $white1;
@@ -67,9 +67,9 @@ main {
       @media screen and (max-width: 768px) {
 
         a {
-          padding: 5px 10px;
+          padding: 5px;
           font-size: 0.8rem;
-          margin: 5px auto;
+          margin: 5px;
           width: 200px;
         }
       }
@@ -79,7 +79,6 @@ main {
 
         a {
           padding: 5px 10px;
-          font-size: 0.8rem;
           margin: 5px auto;
           width: 200px;
         }
@@ -100,6 +99,11 @@ main {
       display: grid;
       grid-template-columns: 50% 50%;
       margin: 40px auto;
+
+      @media screen and (max-width: 900px) {
+        display: block;
+        margin: 20px auto;
+      }
 
       @media screen and (max-width: 768px) {
         display: block;
@@ -179,6 +183,17 @@ main {
         &:hover {
           text-decoration: underline;
           color: $black1;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        h4 {
+          font-size: 1rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          width: 100%;
         }
       }
 
@@ -385,64 +400,6 @@ main {
           }
         }
 
-      }
-    }
-  }
-
-  /************** Planning ****************/
-  .calendar-container {
-    .calendar-content {
-      margin: 50px auto;
-
-      p {
-        padding: 10px 0;
-        font-family: "Roboto Light", sans-serif;
-        font-weight: 200;
-      }
-
-      .board-category {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        margin: 30px auto;
-        width: 80%;
-
-        p {
-          text-align: left;
-        }
-      }
-
-      @media screen and (max-width: 768px) {
-
-        .board-category {
-          p {
-            font-size: 0.8rem;
-          }
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        .board-category {
-          display: block;
-
-          div {
-            display: grid;
-            grid-template-columns: repeat(2, 50%);
-          }
-
-          p {
-            font-size: 0.8rem;
-            padding: 5 10px;
-
-          }
-        }
-      }
-
-      @media screen and (max-width:768px) {
-        .calendar-title {
-          p {
-            font-size: 1rem;
-          }
-        }
       }
     }
   }
