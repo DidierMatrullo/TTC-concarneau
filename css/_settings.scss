@@ -13,9 +13,12 @@
   src: url(../assets/fonts/Raleway-Regular.ttf);
 }
 
-$font1: cormorant, serif;
-$font2: montserrat, serif;
-$font3: raleway, sans-serif;
+$font1: cormorant,
+serif;
+$font2: montserrat,
+serif;
+$font3: raleway,
+sans-serif;
 
 $white1: #ffffff;
 $white2: #e3e2e2;
@@ -62,7 +65,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 
   &:before,
@@ -86,4 +89,3 @@ h3 {
   }
 
 }
-

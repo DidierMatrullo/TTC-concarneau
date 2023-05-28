@@ -42,7 +42,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 h3:before, h3:after {
@@ -301,18 +301,17 @@ main .club-container .club-content .right-part p {
 main .greetings .club-book {
   background: rgba(119, 136, 153, 0.35);
   padding: 20px 0;
-  margin: 0;
   color: #000;
 }
 main .greetings .club-book h4 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
 }
 main .greetings .club-book p {
   font-size: 1.2rem;
   letter-spacing: 1px;
-  width: 70%;
+  width: 100%;
   text-align: left;
   margin: 0 auto;
   padding: 20px;
@@ -327,15 +326,15 @@ main .greetings .club-book a:hover {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  main .greetings .club-book h4 {
+  main .greetings .club-book h4,
+  main .greetings .club-book p,
+  main .greetings .club-book a {
     font-size: 0.9rem;
   }
   main .greetings .club-book p {
-    font-size: 0.9rem;
     width: 100%;
   }
   main .greetings .club-book a {
-    font-size: 0.9rem;
     padding: 3px;
   }
 }
@@ -644,6 +643,5 @@ footer p {
     width: 100%;
     font-size: 0.9rem;
     padding: 10px 0;
-    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */
