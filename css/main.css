@@ -212,25 +212,9 @@ main {
   /************* Registration *************/
   /**************** Event ***************/
 }
-@media screen and (max-width: 920px) {
-  main h3 {
-    font-size: 1.2rem;
-  }
-  main h3:before, main h3:after {
-    width: 33%;
-  }
-}
 @media screen and (max-width: 768px) {
   main h3 {
-    font-size: 1.2rem;
-  }
-  main h3:before, main h3:after {
-    width: 30%;
-  }
-}
-@media screen and (max-width: 600px) {
-  main h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   main h3:before, main h3:after {
     width: 25%;
@@ -239,7 +223,7 @@ main {
 main .section-container {
   margin: 60px auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .section-container {
     margin: 0px auto;
   }
@@ -264,27 +248,20 @@ main .section-container .sc-links a:hover {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  main .section-container .sc-links a {
-    padding: 5px;
-    font-size: 0.8rem;
-    margin: 5px;
-    width: 200px;
-  }
-}
-@media screen and (max-width: 600px) {
   main .section-container .sc-links {
     flex-direction: column;
   }
   main .section-container .sc-links a {
-    padding: 5px 10px;
-    margin: 5px auto;
+    padding: 5px;
+    font-size: 0.9rem;
+    margin: 5px;
     width: 200px;
   }
 }
 main .club-container {
   margin: 50px auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .club-container {
     margin: 20px auto;
   }
@@ -294,19 +271,7 @@ main .club-container .club-content {
   grid-template-columns: 50% 50%;
   margin: 40px auto;
 }
-@media screen and (max-width: 900px) {
-  main .club-container .club-content {
-    display: block;
-    margin: 20px auto;
-  }
-}
 @media screen and (max-width: 768px) {
-  main .club-container .club-content {
-    display: block;
-    margin: 20px auto;
-  }
-}
-@media screen and (max-width: 600px) {
   main .club-container .club-content {
     display: block;
     margin: 20px auto;
@@ -327,22 +292,10 @@ main .club-container .club-content .right-part p {
 }
 @media screen and (max-width: 768px) {
   main .club-container .club-content .left-part h4,
-  main .club-container .club-content .right-part h4 {
-    font-size: 1rem;
-  }
   main .club-container .club-content .left-part p,
+  main .club-container .club-content .right-part h4,
   main .club-container .club-content .right-part p {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  main .club-container .club-content .left-part h4,
-  main .club-container .club-content .right-part h4 {
-    font-size: 1rem;
-  }
-  main .club-container .club-content .left-part p,
-  main .club-container .club-content .right-part p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 main .greetings .club-book {
@@ -373,41 +326,23 @@ main .greetings .club-book a:hover {
   text-decoration: underline;
   color: #000;
 }
-@media screen and (max-width: 900px) {
-  main .greetings .club-book h4 {
-    font-size: 1rem;
-  }
-  main .greetings .club-book p {
-    font-size: 0.9rem;
-    width: 100%;
-  }
-}
 @media screen and (max-width: 768px) {
   main .greetings .club-book h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   main .greetings .club-book p {
     font-size: 0.9rem;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-  main .greetings .club-book h4 {
-    font-size: 1rem;
-  }
-  main .greetings .club-book p {
-    font-size: 0.8rem;
     width: 100%;
   }
   main .greetings .club-book a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 3px;
   }
 }
 main .contact {
   margin: 50px 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .contact {
     margin: 20px auto;
   }
@@ -422,7 +357,7 @@ main .contact .form-section {
   gap: 10px;
   max-width: 600px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .contact .form-section {
     display: block;
   }
@@ -436,7 +371,7 @@ main .contact .form-section .textarea {
 main .contact .form-section label {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 main .contact .form-section input[type=text],
 main .contact .form-section input[type=email],
@@ -476,7 +411,7 @@ main .contact .form-submit .btn:hover {
 main .board-members {
   margin: 70px auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .board-members {
     margin: 40px auto;
   }
@@ -491,10 +426,10 @@ main .board-members .members-table table td {
   padding: 7px 15px;
   text-align: left;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .board-members .members-table table td {
-    font-size: 0.8rem;
-    padding: 5px 8px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
   }
 }
 main .training-container .training-category {
@@ -531,21 +466,11 @@ main .training-container .training-category .training-days .senior-section table
   main .training-container .training-category .training-days .youth-section table td,
   main .training-container .training-category .training-days .senior-section table caption,
   main .training-container .training-category .training-days .senior-section table td {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  main .training-container .training-category .training-days .youth-section table caption,
-  main .training-container .training-category .training-days .youth-section td caption,
-  main .training-container .training-category .training-days .senior-section table caption,
-  main .training-container .training-category .training-days .senior-section td caption {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   main .training-container .training-category .training-days .youth-section table td,
-  main .training-container .training-category .training-days .youth-section td td,
-  main .training-container .training-category .training-days .senior-section table td,
-  main .training-container .training-category .training-days .senior-section td td {
-    padding: 4px 5px;
+  main .training-container .training-category .training-days .senior-section table td {
+    padding: 6px;
   }
 }
 main .registration-container {
@@ -568,7 +493,7 @@ main .registration-container .licence-info table td {
   main .registration-container .licence-info table caption,
   main .registration-container .licence-info table td,
   main .registration-container .licence-info table th {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 main .doc-content {
@@ -598,21 +523,13 @@ main .doc-content .docToFill a:hover {
 }
 @media screen and (max-width: 768px) {
   main .doc-content {
-    width: 80%;
-  }
-  main .doc-content p {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  main .doc-content {
     width: 100%;
   }
   main .doc-content p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   main .doc-content .docToFill a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 4px 8px;
   }
 }
@@ -640,11 +557,11 @@ main .event-container .event p {
   padding-left: 15px;
   font-size: 1rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   main .event-container {
     display: block;
   }
-  main .event-container p {
+  main .event-container .event p {
     text-align: left;
   }
 }
@@ -653,8 +570,8 @@ main .event-container .event p {
   margin: 70px auto;
 }
 .sponsor-container img {
-  width: 180px;
-  height: 100px;
+  width: 200px;
+  height: 110px;
   padding: 10px;
 }
 .sponsor-container p {
@@ -679,24 +596,18 @@ main .event-container .event p {
 }
 @media screen and (max-width: 768px) {
   .sponsor-container img {
-    width: 140px;
-    height: 80px;
+    width: 150px;
   }
-  .sponsor-container p {
+  .sponsor-container .partners div {
+    margin: 20px auto;
+    padding: 5px;
+  }
+  .sponsor-container .partners p {
     font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
   }
-}
-@media screen and (max-width: 600px) {
-  .sponsor-container img {
-    width: 120px;
-    height: 60px;
-  }
-  .sponsor-container p {
-    font-size: 0.8rem;
-  }
-  .sponsor-container .media,
-  .sponsor-container .establishment,
-  .sponsor-container .securalism {
+  .sponsor-container .establishment {
     display: block;
   }
 }
@@ -722,38 +633,16 @@ footer p {
   left: 50%;
   transform: translateX(-50%);
 }
-@media screen and (max-width: 920px) {
-  footer h3:before, footer h3:after {
-    width: 30%;
-  }
-  footer p {
-    width: 100%;
-    font-size: 1.2rem;
-    padding: 10px 0;
-    margin: 0;
-  }
-}
 @media screen and (max-width: 768px) {
   footer h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   footer h3:before, footer h3:after {
-    width: 30%;
+    width: 25%;
   }
   footer p {
     width: 100%;
-    font-size: 1rem;
-    padding: 10px 0;
-    margin: 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  footer h3:before, footer h3:after {
-    width: 18%;
-  }
-  footer p {
-    width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 10px 0;
     margin: 0;
   }

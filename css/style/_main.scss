@@ -3,31 +3,9 @@ main {
   overflow: hidden;
   width: 90%;
 
-  @media screen and (max-width: 920px) {
-    h3 {
-      font-size: 1.2rem;
-
-      &:before,
-      &:after {
-        width: 33%;
-      }
-    }
-  }
-
   @media screen and (max-width: 768px) {
     h3 {
-      font-size: 1.2rem;
-
-      &:before,
-      &:after {
-        width: 30%;
-      }
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    h3 {
-      font-size: 1rem;
+      font-size: 0.9rem;
 
       &:before,
       &:after {
@@ -40,7 +18,7 @@ main {
   .section-container {
     margin: 60px auto;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       margin: 0px auto;
     }
 
@@ -65,21 +43,12 @@ main {
       }
 
       @media screen and (max-width: 768px) {
-
-        a {
-          padding: 5px;
-          font-size: 0.8rem;
-          margin: 5px;
-          width: 200px;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
         flex-direction: column;
 
         a {
-          padding: 5px 10px;
-          margin: 5px auto;
+          padding: 5px;
+          font-size: 0.9rem;
+          margin: 5px;
           width: 200px;
         }
       }
@@ -89,7 +58,7 @@ main {
   .club-container {
     margin: 50px auto;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       margin: 20px auto;
 
 
@@ -100,20 +69,11 @@ main {
       grid-template-columns: 50% 50%;
       margin: 40px auto;
 
-      @media screen and (max-width: 900px) {
-        display: block;
-        margin: 20px auto;
-      }
-
       @media screen and (max-width: 768px) {
         display: block;
         margin: 20px auto;
       }
 
-      @media screen and (max-width: 600px) {
-        display: block;
-        margin: 20px auto;
-      }
 
       .left-part,
       .right-part {
@@ -131,22 +91,10 @@ main {
         }
 
         @media screen and (max-width: 768px) {
-          h4 {
-            font-size: 1rem;
-          }
 
+          h4,
           p {
-            font-size: 1rem;
-          }
-        }
-
-        @media screen and (max-width: 600px) {
-          h4 {
-            font-size: 1rem;
-          }
-
-          p {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -186,50 +134,29 @@ main {
         }
       }
 
-      @media screen and (max-width: 900px) {
-        h4 {
-          font-size: 1rem;
-        }
-
-        p {
-          font-size: 0.9rem;
-          width: 100%;
-        }
-      }
-
       @media screen and (max-width: 768px) {
         h4 {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
 
         p {
           font-size: 0.9rem;
-          width: 100%;
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        h4 {
-          font-size: 1rem;
-        }
-
-        p {
-          font-size: 0.8rem;
           width: 100%;
         }
 
         a {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           padding: 3px;
         }
       }
+
     }
   }
 
   .contact {
     margin: 50px 0;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       margin: 20px auto;
     }
 
@@ -243,7 +170,7 @@ main {
       gap: 10px;
       max-width: 600px;
 
-      @media screen and (max-width:600px) {
+      @media screen and (max-width:768px) {
         display: block;
       }
 
@@ -258,7 +185,7 @@ main {
       label {
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
 
       input[type="text"],
@@ -308,7 +235,7 @@ main {
   .board-members {
     margin: 70px auto;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       margin: 40px auto;
     }
 
@@ -326,11 +253,11 @@ main {
         }
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 768px) {
         table {
           td {
-            font-size: 0.8rem;
-            padding: 5px 8px;
+            font-size: 0.9rem;
+            padding: 8px 12px;
           }
         }
       }
@@ -379,23 +306,12 @@ main {
 
               caption,
               td {
-                font-size: 1rem;
-              }
-            }
-          }
-
-          @media screen and (max-width:600px) {
-
-            table,
-            td {
-              caption {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
               }
 
               td {
-                padding: 4px 5px;
+                padding: 6px;
               }
-
             }
           }
         }
@@ -432,7 +348,7 @@ main {
           caption,
           td,
           th {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -472,23 +388,15 @@ main {
     }
 
     @media screen and (max-width:768px) {
-      width: 80%;
-
-      p {
-        font-size: 1rem;
-      }
-    }
-
-    @media screen and (max-width:600px) {
       width: 100%;
 
       p {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
 
       .docToFill {
         a {
-          font-size: 0.7rem;
+          font-size: 0.9rem;
           padding: 4px 8px;
         }
       }
@@ -524,12 +432,16 @@ main {
       }
     }
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:768px) {
       display: block;
 
-      p {
-        text-align: left;
+      .event {
+        p {
+          text-align: left;
+        }
+
       }
+
     }
   }
 }
@@ -538,8 +450,8 @@ main {
   margin: 70px auto;
 
   img {
-    width: 180px;
-    height: 100px;
+    width: 200px;
+    height: 110px;
     padding: 10px;
   }
 
@@ -568,29 +480,27 @@ main {
   }
 
   @media screen and (max-width:768px) {
+
     img {
-      width: 140px;
-      height: 80px;
+      width: 150px;
     }
 
-    p {
-      font-size: 1rem;
-    }
-  }
+    .partners {
+      div {
+        margin: 20px auto;
+        padding: 5px;
+      }
 
-  @media screen and (max-width:600px) {
-    img {
-      width: 120px;
-      height: 60px;
+      p {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 500;
+      }
+
     }
 
-    p {
-      font-size: 0.8rem;
-    }
-
-    .media,
     .establishment,
-    .securalism {
+      {
       display: block;
     }
   }
