@@ -21,11 +21,11 @@ $font3: raleway,
 sans-serif;
 
 $white1: #ffffff;
-$white2: #e3e2e2;
+$white2: #f3f2f2;
 $black1: #000;
 $grey1: #c0c0c0;
 $grey2: #414141;
-$grey3: #b3b2b2;
+$grey3: #a2a2a2;
 
 @mixin title {
   text-transform: uppercase;
@@ -58,7 +58,7 @@ body {
   color: $black1;
   text-align: center;
   margin: 0 auto;
-  background: $grey1;
+  background: $white2;
 }
 
 h3 {
