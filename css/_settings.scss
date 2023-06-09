@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "cormorant";
-  src: url(../assets/fonts/CormorantGaramond-Regular.ttf);
+  font-family: "lato";
+  src: url(../assets/fonts/Lato-Thin.ttf);
 }
 
 @font-face {
@@ -13,10 +13,10 @@
   src: url(../assets/fonts/Raleway-Regular.ttf);
 }
 
-$font1: cormorant,
-serif;
+$font1: lato,
+sans-serif;
 $font2: montserrat,
-serif;
+sans-serif;
 $font3: raleway,
 sans-serif;
 
@@ -54,7 +54,7 @@ html {
 }
 
 body {
-  font-family: $font1;
+  font-family: $font3;
   color: $black1;
   text-align: center;
   margin: 0 auto;
